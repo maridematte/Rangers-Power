@@ -33,7 +33,8 @@ table.list {
 }
 
 #dinamicTable {
-  margin-top: 50px;
+  padding-top: 50px;
+  background-color: white;
 }
 
 #navBar {
