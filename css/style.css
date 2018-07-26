@@ -10,4 +10,13 @@ table.list {
 
 #divImg img {
  max-width: 100%;
+ height:200px;
+ border:solid 2px grey;
+}
+
+#telaInicial {
+  margin-top: 10%;
+  align-items: center;
+  max-width: 50%;
+  margin-left: 25%;
 }

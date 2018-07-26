@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
+    <title>Search Film</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -15,7 +15,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-dark elegant-color justify-content-between">
+    <nav class="navbar sticky-top navbar-dark elegant-color justify-content-between">
       <a class="navbar-brand" id="navBar" style="color:white">Search Films</a>
     <form class="form-inline">
       <div class="form-row align-items-center">
@@ -45,7 +45,7 @@
         </div>
         <div class="col-auto my-1">
           <a onclick= href="">
-            <button id="requestGenre" type="button" class="btn btn-outline-success">Search</button>
+            <button id="requestGenre" type="button" class="btn btn-cyan">Search</button>
           </a>
         </div>
       </div>
@@ -63,7 +63,7 @@
             </button>
           </div>
           <div class="modal-body">
-            <div id="divImg"class="d-flex justify-content-center" style="height:200px; border:solid 2px black;">
+            <div id="divImg"class="d-flex justify-content-center">
               <img id="imgModal">
             </div>
             <div id="genero" class="d-flex justify-content-left">
@@ -83,6 +83,13 @@
       </div>
     </div>
     <!-- Full Height Modal Right -->
+    <div id="telaInicial" class="card" >
+       <div class="card-body">
+           <h4 class="card-title">Descubra mais filmes!</h4>
+           <p class="card-text">Para quando você não sabe que filme assistir</p>
+           <a class="btn btn-cyan">Traga-me filmes!</a>
+       </div>
+    </div>
     <div id="dinamicTable">
     <!--CONTEÚDO DOS FILMES APARECE AQUI DINAMICAMENTE -->
     </div>
