@@ -1,3 +1,7 @@
+body {
+  background-color: lightcyan;
+}
+
 table img {
  max-height: 100px;
  max-width: 66.6px;

@@ -23,6 +23,9 @@ $(document).ready(function () {
          }
         var table = buildTable(movieList);
         $("#dinamicTable").html(table)
+        $("#dinamicTable table").css("background-color", "white");
+        $("#dinamicTable table").css("border", "double black");
+        $("#dinamicTable table").css("border-radius", "31px");
        }
      }
     );
@@ -48,8 +51,12 @@ $(document).ready(function () {
            movieList.push(movie)
          }
         var table = buildTable(movieList);
-        $("#dinamicTable").html(table)
+        $("#dinamicTable").html(table);
+        $("#dinamicTable table").css("background-color", "white");
+        $("#dinamicTable table").css("border", "double black");
+        $("#dinamicTable table").css("border-radius", "31px");
        }
+
      }
     );
   })
