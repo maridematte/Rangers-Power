@@ -24,12 +24,34 @@ table.list {
 #genero {
   margin-top: 10px;
   margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 270;
 }
 
 #dinamicTable {
   margin-top: 50px;
 }
 
+#navBar {
+    font-family: "Times New Roman", Times, serif;
+    font-variant: small-caps;
+    font-size: 2em;
+}
+
+#sel1 {
+    font-family: "Shadow into light", serif;
+}
+
 #sinopse {
-  
+    font-family: "Roboto",sans-serif;
+}
+
+#overview {
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+}
+
+#myModalLabel {
+    font-family: "Roboto",sans-serif;
+    font-weight: 1000;
 }
