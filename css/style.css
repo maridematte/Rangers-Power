@@ -10,8 +10,8 @@ table.list {
 
 #divImg img {
  max-width: 100%;
- height:200px;
- border:solid 2px grey;
+ height:350px;
+ border:solid 2px lightgrey;
 }
 
 #telaInicial {
@@ -19,4 +19,17 @@ table.list {
   align-items: center;
   max-width: 50%;
   margin-left: 25%;
+}
+
+#genero {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#dinamicTable {
+  margin-top: 50px;
+}
+
+#sinopse {
+  
 }

@@ -3,9 +3,33 @@ $(document).ready(function () {
   var databasePosterPath = "https://image.tmdb.org/t/p/w600_and_h900_bestv2"
   var genreID;
   var pageNumber = 1;
-  //posterpath URLDAIMGAQUI.jpg
+  $("#telaInicial").click(function () {
+    $(this).attr("hidden", true)
+    $.ajax({url: "https://api.themoviedb.org/3/discover/movie?api_key=1c1d6b1d6b9f5e82d00ccef480214766&language=pt-BR&sort_by=vote_count.desc&include_adult=false&include_video=false&page=1",
+    async: false,
+    success: function(result){
+       movieList = []
+       for(let i = 0; i < result.results.length; i++) {
+           let movieRaw = result.results[i]
+           let movie = {
+                id: movieRaw.id,
+                title: movieRaw.title,
+                genres: movieRaw.genre_ids,
+                overview: movieRaw.overview,
+                poster: movieRaw.poster_path ? databasePosterPath + movieRaw.poster_path : 'https://cdn.browshot.com/static/images/not-found.png'
+           }
+           movie.genres = getGenreName(movie.genres);
+           movieList.push(movie)
+         }
+        var table = buildTable(movieList);
+        $("#dinamicTable").html(table)
+       }
+     }
+    );
+  });
   $("#requestGenre").click(function (event) {
     event.preventDefault();
+    $("#telaInicial").attr("hidden", true)
     genreID = $("#sel1").val();
     $.ajax({url: "https://api.themoviedb.org/3/discover/movie?with_genres=" + genreID + "&page=" + pageNumber + "&language=pt-BR&api_key=1c1d6b1d6b9f5e82d00ccef480214766",
     async: false,
