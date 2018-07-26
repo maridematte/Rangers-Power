@@ -18,9 +18,71 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-light bg-light justify-content-between">
+      <a class="navbar-brand" id="navBar">Search Films</a>
+    </nav>
+    <form class="form-inline">
+      <div class="form-row align-items-center">
+        <div class="col-auto my-1" id="search">
+          <select  class="custom-select mr-sm-2" id="sel1">
+            <option value="0">Nenhum</option>
+            <option value="28">Ação</option>
+            <option value="16">Animação</option>
+            <option value="12">Aventura</option>
+            <option value="35">Comédia</option>
+            <option value="99">Documentário</option>
+            <option value="18">Drama</option>
+            <option value="10751">Família</option>
+            <option value="14">Fantasia</option>
+            <option value="878">Ficção Científica</option>
+            <option value="10752">Guerra</option>
+            <option value="36">Histórico</option>
+            <option value="80">Investigação</option>
+            <option value="9648">Mistério</option>
+            <option value="10402">Música</option>
+            <option value="37">Ocidental</option>
+            <option value="10749">Romance</option>
+            <option value="53">Suspense</option>
+            <option value="10770">Televisão</option>
+            <option value="27">Terror</option>
+          </select>
+        </div>
+        <div class="col-auto my-1">
+          <a onclick= href="">
+            <button type="submit" class="btn btn-outline-success">Search</button>
+          </a>
 
+        </div>
+      </div>
+    </form>
+
+    <!-- Button trigger modal -->
+  <button id="modalActivate" type="button" class="btn btn-danger">
+   Launch demo modal
+  </button>
+  <!-- Modal -->
+  <div class="modal fade right" id="exampleModalPreview" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalPreviewLabel">Modal title</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+         ...
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         <button type="button" class="btn btn-primary">Save changes</button>
+       </div>
+     </div>
+   </div>
+  </div>
+<!-- Modal -->
     <!-- Start your project here-->
-    <div style="height: 100vh">
+    <div>
         <div class="flex-center flex-column">
             <h1 class="animated fadeIn mb-4">Material Design for Bootstrap</h1>
 
