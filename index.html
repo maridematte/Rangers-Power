@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +12,8 @@
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
     <nav class="navbar navbar-dark elegant-color justify-content-between">
       <a class="navbar-brand" id="navBar" style="color:white">Search Films</a>
@@ -47,43 +45,33 @@
         </div>
         <div class="col-auto my-1">
           <a onclick= href="">
-            <button id="requestGenre" type="button" class="btn btn-cyan">Search</button>
+            <button id="requestGenre" type="button" class="btn btn-outline-success">Search</button>
           </a>
-
         </div>
       </div>
     </form>
   </nav>
-
-    <!-- Demo botao Modal, parte importante:  data-toggle="modal" data-target="#idModal-->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fullHeightModalLeft">
-    Launch demo modal
-  </button>
   <!-- Full Height Modal Right -->
   <div class="modal fade left" id="fullHeightModalLeft" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-
       <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
       <div class="modal-dialog modal-full-height modal-left" role="document">
-
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title w-100" id="myModalLabel"> Titulo </h4>
+            <h4 class="modal-title w-100" id="myModalLabel"></h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <div class="d-flex justify-content-center" style="height:200px; border:solid 2px black;">
-              <h1> Poster <h1>
+            <div id="divImg"class="d-flex justify-content-center" style="height:200px; border:solid 2px black;">
+              <img id="imgModal">
             </div>
-            <div class="d-flex justify-content-left">
-              <p> generos </p>
+            <div id="genero" class="d-flex justify-content-left">
             </div>
             <div class="d-flex justify-content-left">
               <h2> Sinopse </h2>
             </div>
-            <div>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget orci ante. Nullam bibendum urna eget nisi hendrerit scelerisque. Sed non nisl dolor. Nulla a pulvinar ipsum. Nullam ut mi a urna euismod placerat. Vestibulum sagittis est mi, non accumsan sem porta sit amet. Mauris at mattis risus. Praesent convallis. </p>
+            <div id="sinopse">
             </div>
           </div>
           <div class="modal-footer justify-content-center">
@@ -95,11 +83,9 @@
       </div>
     </div>
     <!-- Full Height Modal Right -->
-
-    <!-- Start your project here-->
-    <div id="dinamicTable"></div>
-    <!-- /Start your project here-->
-
+    <div id="dinamicTable">
+    <!--CONTEÚDO DOS FILMES APARECE AQUI DINAMICAMENTE -->
+    </div>
     <!-- SCRIPTS -->
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -111,5 +97,4 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <script src="js/script.js" charset="utf-8"></script>
 </body>
-
 </html>

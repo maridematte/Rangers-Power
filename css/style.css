@@ -1,0 +1,13 @@
+table img {
+ max-height: 100px;
+ max-width: 66.6px;
+}
+
+table.list {
+ max-width: 700px;
+ margin: auto;
+}
+
+#divImg img {
+ max-width: 100%;
+}
